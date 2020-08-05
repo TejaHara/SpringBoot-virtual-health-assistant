@@ -16,7 +16,7 @@ public class Doctor {
 
 	private String hid;
 	private String fullName;
-	private String speciality;
+	private String specialty;
 	private String age;
 	private String phoneNum;
 	private String gender;
@@ -61,11 +61,11 @@ public class Doctor {
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
 	}
-	public String getSpeciality() {
-		return speciality;
+	public String getSpecialty() {
+		return specialty;
 	}
-	public void setSpeciality(String speciality) {
-		this.speciality = speciality;
+	public void setSpecialty(String specialty) {
+		this.specialty = specialty;
 	}
 	public String getAge() {
 		return age;

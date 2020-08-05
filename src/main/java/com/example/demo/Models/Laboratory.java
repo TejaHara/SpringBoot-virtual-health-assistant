@@ -8,13 +8,15 @@ import javax.persistence.Table;
 @Table(name = "lab_info")
 public class Laboratory {
 
-	@Id
 	private String lid;
 	private String laboratoryName;
-	private String speciality;
+	private String specialty;
 	private String phoneNum;
 	private String address;
 	private String activeHours;
+	@Id
+	private String email;
+	private String password;
 	
 	
 	public String getLaboratoryDescription(){
@@ -28,6 +30,24 @@ public class Laboratory {
 		return laboratoryDesc;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public String getLid() {
 		return lid;
@@ -49,13 +69,13 @@ public class Laboratory {
 	}
 
 
-	public String getSpeciality() {
-		return speciality;
+	public String getSpecialty() {
+		return specialty;
 	}
 
 
-	public void setSpeciality(String speciality) {
-		this.speciality = speciality;
+	public void setSpecialty(String speciality) {
+		this.specialty = speciality;
 	}
 
 

@@ -9,34 +9,35 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.demo.Models.Doctor;
 import com.example.demo.Models.Patient;
 import com.example.demo.service.loginService;
 
 @Controller
-public class PatientController {
+public class DoctorController {
 	@Autowired
 	private loginService loginService;
 
-	@RequestMapping("/patientloginController")
+	@RequestMapping("/doctorloginController")
 	@ResponseBody
-	public ModelAndView patientLogin(HttpServletRequest request) {
-		System.out.println("in patientController");
+	public ModelAndView doctorLogin(HttpServletRequest request) {
+		System.out.println("in doctorController");
 		ModelAndView mv = new ModelAndView();
-		String str = loginService.checkIfPatient(request);
-		System.out.println("back to patientController");
-		if(str.equals("Patient")) {
+		String str = loginService.checkIfDoctor(request);
+		System.out.println("back to doctorController");
+		if(str.equals("Doctor")) {
 			HttpSession session = request.getSession();
-			Patient patient = loginService.getPatient(request.getParameter("emailLogin"));
-			if(patient != null) {
-				loginService.initializePatient(session,patient);
+			Doctor doctor = loginService.getDoctor(request.getParameter("emailLogin"));
+			if(doctor != null) {
+				loginService.initializeDoctor(session,doctor);
 				//loginService.getCovidInfo(request);
-				System.out.println("patient redirection");
-				mv.setViewName("redirect:/patient.jsp");
+				System.out.println("doctor redirection");
+				mv.setViewName("redirect:/doctor.jsp");
 			}
 		}
 		else {
-			System.out.println("in else patientLoginController");
-			mv = new ModelAndView("/login.jsp");
+			System.out.println("in else doctorLoginController");
+			mv = new ModelAndView("/homePage.jsp");
 			mv.addObject("loginStatus",str);
 		}
 		return mv;

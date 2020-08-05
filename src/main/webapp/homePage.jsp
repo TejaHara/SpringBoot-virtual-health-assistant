@@ -80,11 +80,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">SBoA</a>
+      <a class="navbar-brand" href="#myPage">VM</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="homePage.html">HOME</a></li>
+        <li><a href="homePage.jsp">HOME</a></li>
         <li><a href="#">ABOUT</a></li>
         <li><a href="#">JOBS</a></li>
         <li><a href="#">COVID-19</a></li>
@@ -130,7 +130,7 @@
   <div class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="navbar-text pull-left">
       <div class="container">
-        <p>© State Bank of Ajman</p>
+        <p>© VMedico</p>
       </div>
     </div>
   </div>

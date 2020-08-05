@@ -11,4 +11,8 @@ public class AppConstants {
 	public static String DB_URL = "jdbc:mysql://" + DB_HOST + ":" + DB_PORT + "/" + DB_SCHEMA + "?useSSL=false";
 	public static String NO_DATA_FOUND_MESG = "Sorry, there is no data available";
 	public static String TABLE_NAME = "admin_info";
+	public static String PATIENT_TABLE = "patient_info";
+	public static String DOCTOR_TABLE = "doctor_info";
+	public static String LABORATORY_TABLE = "lab_info";
+	
 }

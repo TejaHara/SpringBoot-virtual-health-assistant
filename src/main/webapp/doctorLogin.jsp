@@ -18,11 +18,11 @@
         <h4 class="form-signin-heading">Enter Credentials</h4>
         <p>
           <label for="username" class="sr-only">Email</label>
-          <input type="text" id="email" name="email" class="form-control" placeholder="Email" required autofocus>
+          <input type="email" id="email" name="emailLogin" class="form-control" placeholder="Email" required autofocus>
         </p>
         <p>
           <label for="password" class="sr-only">Password</label>
-          <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+          <input type="password" id="password" name="passwordLogin" class="form-control" placeholder="Password" required>
         </p>
 		
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
