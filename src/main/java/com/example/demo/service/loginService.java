@@ -28,24 +28,13 @@ import com.example.demo.Repository.PatientRepository;
 public class loginService {
 
 	/**/@Autowired
-	private PatientRepository patientRepository;
+	private static PatientRepository patientRepository;
 
-	/*public  static String login(HttpServletRequest request) {
-		String email = request.getParameter("emailLogin");
-		
-			User user = userRepository.findByEmailIgnoreCase(email);
-			if (user == null)
-				return "No such email exists.. For admin login tick the box";
-			else if (!user.getPassword().equals(request.getParameter("passwordLogin")))
-				return "Password is incorrect";
-			else if (!user.isVerified())
-				return "Please verify your account from your email to login";
-			return "User";
-		}*/
 	
-	/*Admin Validation*/
-	public String checkIfAdmin(HttpServletRequest request) {
+	/***********************Admin Validation****************************************************************************************************/
+	public static String checkIfAdmin(HttpServletRequest request) {
 		try {
+			System.out.println("checkIfAdmin");
 			Connection con = getConnection();
 			String email = request.getParameter("emailLogin");
 			String query = "select password from "+AppConstants.TABLE_NAME+" where email=?";
@@ -67,6 +56,7 @@ public class loginService {
 	}
 	
 	public Admin getAdmin(String email) {
+		System.out.println("getAdmin");
 		try {
 			Connection con = getConnection();
 			String query = "select * from "+AppConstants.TABLE_NAME+" where email=?";
@@ -74,15 +64,16 @@ public class loginService {
 			ps.setString(1, email);
 			ResultSet rs = ps.executeQuery();
 			Admin admin = null;
+			System.out.println("back to getAdmin");
 			if(rs.next()) {
 			    admin = new Admin();
 			    
 				admin.setEmail(rs.getString("email"));
-				admin.setFullName(rs.getString("full_name"));
+				admin.setFullName(rs.getString("fullName"));
 				admin.setPassword(rs.getString("password"));
 				admin.setGender(rs.getString("gender"));
 				admin.setAddress(rs.getString("address"));
-				admin.setPhoneNumber(rs.getString("phone_num"));
+				admin.setPhoneNumber(rs.getString("phoneNum"));
 				System.out.println("in loginservice");
 			}
 			return admin;
@@ -94,13 +85,58 @@ public class loginService {
 	}
 	
 	public void initializeAdmin(HttpSession session,Admin admin) {
+		System.out.println("in initializeAdmin");
 		session.setAttribute("admin", admin);
 		/*Admin Duty*/
 	}
+	/**************************************************************************************************************/
 	
+	static {
+		try {
+			Class.forName(AppConstants.DB_DRIVER);
+		} catch (ClassNotFoundException e) {
+			System.out.println(e);
+		}
+	}
+	
+	/**********************************************************************************************************************************/
+	public  String login(HttpServletRequest request) {
+		System.out.println("in login");
+		String email = request.getParameter("emailLogin");
+		Patient patient = patientRepository.findByEmailIgnoreCase(email);
+		if (patient == null)
+			return "No such email exists.. For admin login tick the box";
+		else if (!patient.getPassword().equals(request.getParameter("passwordLogin")))
+			return "Password is incorrect";
+		
+		return "Patient";
+	}
+	
+	public Patient getPatient(String email) {
+		System.out.println("in getPatient");
+		return patientRepository.findByEmailIgnoreCase(email);
+	}
+	
+	
+	
+	/**********************************************************************************************************************************/
+
 	
 	public static Connection getConnection() throws SQLException {
+		System.out.println("in getConnection");
 		return DriverManager.getConnection(AppConstants.DB_URL, AppConstants.DB_USER, AppConstants.DB_PASSWORD);
+	}
+	
+	public static void closeConnection(Connection con) {
+		System.out.println("in closeConnection");
+		if (con == null) {
+			return;
+		}
+		try {
+			con.close();
+		} catch (SQLException e) {
+			System.out.println(e);
+		}
 	}
 	
 }

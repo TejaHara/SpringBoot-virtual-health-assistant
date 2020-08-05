@@ -5,13 +5,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "doctorInfo")
+@Table(name = "doctor_info")
 public class Doctor {
 
-	@Id
-	private String id;
+
 	private String docid;
 	private String password;
+	@Id
 	private String email;
 
 	private String hid;
@@ -36,12 +36,7 @@ public class Doctor {
 		return doctorDesc;
 	}
 	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getHid() {
 		return hid;
 	}

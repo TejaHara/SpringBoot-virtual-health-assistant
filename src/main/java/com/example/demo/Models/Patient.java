@@ -15,7 +15,6 @@ public class Patient {
 
 	@Id
 	private String email;
-	private String id;
 	private String pid;
 	private String password;
 
@@ -32,11 +31,6 @@ public class Patient {
 	
 
 
-	@Autowired
-	@OneToOne(targetEntity = ConfirmationToken.class, fetch = FetchType.EAGER)
-	@JoinColumn(nullable = false,name = "email")
-	private ConfirmationToken token;
-	
 	
 	public String getCaseDescription(){
 		String caseDesc="    Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
@@ -61,12 +55,7 @@ public class Patient {
 	public void setHospitalID(String hospitalID) {
 		this.hospitalID = hospitalID;
 	}
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getPid() {
 		return pid;
 	}

@@ -21,21 +21,23 @@ public class AdminController {
 	
 	@RequestMapping("/adminloginController")
 	@ResponseBody
-	public ModelAndView login(HttpServletRequest request) {
+	public ModelAndView adminLogin(HttpServletRequest request) {
 		System.out.println("in admincontroller");
 		ModelAndView mv = new ModelAndView();
 		String str = loginService.checkIfAdmin(request);
-
+		System.out.println("back to admincontroller");
 		if(str.equals("Admin")) {
 			HttpSession session = request.getSession();
-			Admin admin = loginService.getAdmin(request.getParameter("emailLogin")); 
+			Admin admin = loginService.getAdmin(request.getParameter("emailLogin"));
 			if(admin != null) {
 				loginService.initializeAdmin(session,admin);
 				//loginService.getCovidInfo(request);
+				System.out.println("admin redirection");
 				mv.setViewName("redirect:/admin.jsp");
 			}
 		}
 		else {
+			System.out.println("in else mv login");
 			mv = new ModelAndView("/login.jsp");
 			mv.addObject("loginStatus",str);
 		}

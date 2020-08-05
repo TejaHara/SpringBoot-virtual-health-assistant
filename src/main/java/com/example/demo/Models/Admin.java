@@ -1,4 +1,4 @@
-package com.example.demo.Models;
+	package com.example.demo.Models;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 @Component
-//@Table(name = "adminInfo")
+//@Table(name = "admin_info") hardcoded admin values in db
 public class Admin {
 	@Id
 	private String Email;

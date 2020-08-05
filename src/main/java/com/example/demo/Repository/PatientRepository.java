@@ -15,6 +15,6 @@ import com.example.demo.Models.Patient;
 public interface PatientRepository extends CrudRepository<Patient, String> {
 	Patient findByEmailIgnoreCase(String email);
 	
-	@Query(value = "select * from patient_info where status='BeingTreated'",nativeQuery = true)
+	@Query(value = "select * from patient_info where status='Being Treated'",nativeQuery = true)
 	List<Patient> findBeingTreatedPatients();
 }

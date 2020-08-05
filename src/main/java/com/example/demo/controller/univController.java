@@ -14,18 +14,16 @@ import com.example.demo.service.loginService;
 public class univController {
 
 	@RequestMapping("/home")
-	
 	public String home() {
-		System.out.println("in controller");
-		return "login.jsp";
+		System.out.println("in homeController");
+		return "homePage.jsp";
 	}
 	
 	
 	@RequestMapping("/logout")
 	public String destroySession(HttpServletRequest request) {
+		System.out.println("in logout");
 		request.getSession().invalidate();
-		return "redirect:/login.jsp";
+		return "redirect:/homePage.jsp";
 	}
 }
-
-
