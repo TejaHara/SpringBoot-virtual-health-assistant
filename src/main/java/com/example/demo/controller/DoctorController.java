@@ -37,7 +37,7 @@ public class DoctorController {
 		}
 		else {
 			System.out.println("in else doctorLoginController");
-			mv = new ModelAndView("/homePage.jsp");
+			mv = new ModelAndView("/error.jsp");
 			mv.addObject("loginStatus",str);
 		}
 		return mv;

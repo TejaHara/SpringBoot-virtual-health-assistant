@@ -98,7 +98,7 @@
 
 
     <div class="jumbotron text-center ">
-  		<h1>VMedico</h1> 
+  		<h1>ErrorPage</h1> 
  		<p>Waiting for your token number is bygone now!</p> 
 	</div>
 

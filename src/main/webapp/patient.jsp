@@ -1,20 +1,17 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    
 <!DOCTYPE html>
 <html lang="en">
 
 	<head>
-		<meta charset="ISO-8859-1">
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<!--base href="/"-->
 		<!-- Bootstrap CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="/css/bootstrap-social.css">
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/styles.css">
-		<title>Ristorante Con Fusion: About Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/bootstrap-social.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+		<title>Patient Page</title>
 
 	</head>
 
@@ -24,21 +21,27 @@
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
 					<span class="navbar-toggler-icon"></span>
 				</button>	
-				<a class="navbar-brand mr-auto" href="homePage.jsp"><img src="img/logo.png" class="img-fluid"height="30" width="41"></a>
+				<a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" alt="VMedico           " height="30" width="41"></a>
 				<div class="collapse navbar-collapse" id="Navbar">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item "><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
 						<li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
 						<li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
 						<li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
-					</ul></div></div>
+					</ul>
+					<span class="navbar-text">
+                    <a href="logout" id="loginButton">
+                        <span class="fa fa-sign-in"></span>Logout</a>
+                	</span>
+					</div>
+				</div>
         </nav>
         
 		<header class="jumbotron">
 			<div class="container">
 				<div class="row row-header">
 					<div class="col-12 col-sm-6">
-						<h1>Ristorante con Fusion</h1>
+						<h1>Welcome Patient</h1>
 						<p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
 					</div>
 					<div class="col-12 col-sm align-self-center">
@@ -49,16 +52,7 @@
 		</header>
 
 		<div class="container">
-			<div class="row ">
-				<div class="col-12 col-sm-12">
-					<ol class="breadcrumb" >
-						<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-						<li class="breadcrumb-item">About</li>
-					</ol>
-					<h3>About Us</h3>
-					<hr>
-				</div>
-			</div>
+			
 
 			<div class="row row-content">
 				<div class="col col-sm-6">
@@ -218,10 +212,10 @@
 					<div class="col-4 offset-1 col-sm-2">
 						<h5>Links</h5>
 						<ul class="list-unstyled">
-							<li><a href="./patient.jsp">Home</a></li>
+							<li><a href="./index.html">Home</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Menu</a></li>
-							<li><a href="./contactus.jsp">Contact</a></li>
+							<li><a href="./contactus.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-7 col-sm-5">
@@ -246,9 +240,10 @@
 						</div>
 					</div>
 				</div>
+				<br>
 				<div class="row justify-content-center">             
 					<div class="col-auto">
-						<p>© VMedico 2020</p>
+						<p>© Copyright 2020 VMedico</p>
 					</div>
 				</div>
 			</div>

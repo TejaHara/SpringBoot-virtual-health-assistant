@@ -53,7 +53,7 @@
 
 
 
-    <header class="jumbotron jumbotron-fluid">
+<!--     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -68,7 +68,7 @@
 
             </div>
         </div>
-    </header>
+    </header> -->
 
     <div class="container">
         
@@ -89,7 +89,7 @@
       </div>
 
       <div class="col-sm-3 col-xs-8">
-        <a href="adminSearch.jsp"><button class="btn btn-dark btn-lg" type="button">Search</button></a>
+        <a href="#"><button class="btn btn-dark btn-lg" type="button">Search</button></a>
       </div>
 
       <div class="col-sm-3 col-xs-8">
@@ -99,6 +99,93 @@
   </div>
 		
 		
+		
+		
+		
+		
+		<div class="row row-content">
+           <div class="col-12">
+              <h3>Choose as per your preference</h3>
+              <br><br><br>
+           </div>
+            <div class="col-12 col-md-9">
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Name</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Email</label>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Doctor's Email">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">docID</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="docid" name="docid" placeholder="Enter Doctor ID">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Hospital</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="hospital" name="hospital" placeholder="Enter Linked Hospital">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                   <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Contact No.</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="hospital" name="hospital" placeholder="Enter Doc's Contact No.">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+            </div>
+            </div>
+       </div>
 
 
 

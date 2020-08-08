@@ -37,7 +37,7 @@ public class LaboratoryController {
 		}
 		else {
 			System.out.println("in else laboratoryLoginController");
-			mv = new ModelAndView("/homePage.jsp");
+			mv = new ModelAndView("/error.jsp");
 			mv.addObject("loginStatus",str);
 		}
 		return mv;

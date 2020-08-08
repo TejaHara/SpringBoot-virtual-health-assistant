@@ -23,7 +23,7 @@ public class LoginFilter implements Filter{
 		HttpServletResponse response = (HttpServletResponse)res;
 		HttpSession session = request.getSession(false);
 		
-		if(session != null && session.getAttribute("user") != null) {
+		if(session != null && session.getAttribute("patient") != null) {
 			response.sendRedirect("/patient.jsp");
 		}
 		else if(session != null && session.getAttribute("admin") != null) {

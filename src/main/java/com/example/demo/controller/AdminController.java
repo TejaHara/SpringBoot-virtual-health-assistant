@@ -38,7 +38,7 @@ public class AdminController {
 		}
 		else {
 			System.out.println("in else mv login");
-			mv = new ModelAndView("/login.jsp");
+			mv = new ModelAndView("/error.jsp");
 			mv.addObject("loginStatus",str);
 		}
 		return mv;

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+
 @WebFilter(urlPatterns = {"/admin.jsp"})
 public class AdminFilter implements Filter{
 
@@ -22,11 +23,11 @@ public class AdminFilter implements Filter{
 		HttpServletRequest request = (HttpServletRequest)req;
 		HttpServletResponse response = (HttpServletResponse)res;
 		HttpSession session = request.getSession(false);
-		if(session.getAttribute("user")== null && session.getAttribute("admin") == null){
+		if(session.getAttribute("patient")== null && session.getAttribute("admin") == null){
 			response.sendRedirect("/homePage.jsp");
 		}
-		if(session.getAttribute("user") != null) {
-			response.sendRedirect("/profile.jsp");
+		if(session.getAttribute("patient") != null) {
+			response.sendRedirect("/patient.jsp");
 		}
 		chain.doFilter(req, res);
 	}

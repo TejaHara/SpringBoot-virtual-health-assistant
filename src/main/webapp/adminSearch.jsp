@@ -53,12 +53,11 @@
 
 
 
-    <header class="jumbotron jumbotron-fluid">
+ <!--    <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <h3>Welcome Admin</h3>
                 </div>
                 <div class="col"></div>
                 <div class="col-12 col-sm align-self-center">
@@ -68,33 +67,38 @@
 
             </div>
         </div>
-    </header>
+    </header> -->
 
     <div class="container">
         
-<br><br><br>
 
 		
+		<br><br><br>
 		
 
-  <div class="row slideanim">
+  <div class="container">
+  <div class="row-md-12 text-center">
+  <h2>Whom do you want to search?</h2></div>
+  <br><br><br>
+  
+  <div class="row text-center">
     <div class="col-sm-3 col-xs-8">
-      <a href="#"><button class="btn btn-dark btn-lg" type="button" >Notifications</button></a>    
+      <a href="patientSearchAdmin.jsp"><button class="btn btn-dark btn-lg" type="button" > Patient </button></a>    
     </div>
 
 
       <div class="col-sm-3 col-xs-8">
-        <a href="#"><button class="btn btn-light btn-lg" type="button">Messages</button></a>
+        <a href="doctorSearchAdmin.jsp"><button class="btn btn-light btn-lg" type="button">  Doctor  </button></a>
             
       </div>
 
       <div class="col-sm-3 col-xs-8">
-        <a href="adminSearch.jsp"><button class="btn btn-dark btn-lg" type="button">Search</button></a>
+        <a href="labSearchAdmin.jsp"><button class="btn btn-dark btn-lg" type="button">Laboratory</button></a>
       </div>
 
       <div class="col-sm-3 col-xs-8">
-        <a href="#"><button class="btn btn-light btn-lg" type="button">   DummyBTN   </button></a>
-      </div>
+        <a href="#"><button class="btn btn-light btn-lg" type="button">DummyBTN</button></a>
+      </div></div>
 
   </div>
 		
@@ -284,8 +288,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
-<!-- <script>
+<!-- <script src="js/scripts.js"></script>
+<script>
     $(document).ready(function(){
         $("#mycarousel").carousel( { interval: 2000 } );
         $("#carouselButton").click(function(){
@@ -314,8 +318,8 @@
             $("#reserveModal").modal('show');
         });
     });
-</script> -->
-
+</script>
+ -->
 
 
 </body>

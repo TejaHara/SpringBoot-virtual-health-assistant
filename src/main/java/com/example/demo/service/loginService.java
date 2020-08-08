@@ -83,7 +83,7 @@ public class loginService {
 	}
 	
 	/***********************Admin Validation****************************************************************************************************/
-	public static String checkIfAdmin(HttpServletRequest request) {
+	public String checkIfAdmin(HttpServletRequest request) {
 		try {
 			System.out.println("checkIfAdmin");
 			Connection con = getConnection();
@@ -307,7 +307,7 @@ public class loginService {
 	}
 	
 	public Patient getPatient(String email) {
-		System.out.println("getAdmin");
+		System.out.println("in getPatient");
 		try {
 			Connection con = getConnection();
 			String query = "select * from "+AppConstants.PATIENT_TABLE+" where email=?";
@@ -315,7 +315,7 @@ public class loginService {
 			ps.setString(1, email);
 			ResultSet rs = ps.executeQuery();
 			Patient patient = null;
-			System.out.println("back to getAdmin");
+			System.out.println("back to getPatient	");
 			if(rs.next()) {
 			    patient = new Patient();
 			    

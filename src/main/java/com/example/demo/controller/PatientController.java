@@ -36,7 +36,7 @@ public class PatientController {
 		}
 		else {
 			System.out.println("in else patientLoginController");
-			mv = new ModelAndView("/login.jsp");
+			mv = new ModelAndView("/error.jsp");
 			mv.addObject("loginStatus",str);
 		}
 		return mv;
