@@ -1,22 +1,16 @@
 package com.example.demo.service;
 
-import java.io.File;
-import java.nio.charset.StandardCharsets;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.Enumeration;
-import java.util.List;
 
-import javax.persistence.Id;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import org.apache.commons.io.FileUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.Models.Admin;
@@ -24,7 +18,6 @@ import com.example.demo.Models.Doctor;
 import com.example.demo.Models.Laboratory;
 import com.example.demo.Models.Patient;
 import com.example.demo.Repository.AppConstants;
-import com.example.demo.Repository.PatientRepository;
 
 
 @Service
@@ -331,9 +324,10 @@ public class loginService {
 				patient.setHospitalID(rs.getString("hospitalID"));
 				patient.setReportsID(rs.getString("reportsID"));
 				patient.setPhoneNum(rs.getString("phoneNum"));
+				patient.setPrescriptionList(rs.getString("prescription_list"));
+				patient.setPrescribedDate(rs.getString("prescribed_date"));
+				patient.setReportsLink(rs.getString("reports_link"));;
 				System.out.println("in getPatient rs.next() method");
-				
-
 			}
 			return patient;
 		}

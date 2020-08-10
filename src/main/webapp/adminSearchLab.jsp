@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/css/bootstrap-social.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/styles.css">
-    <title>Lab Login</title>
+    <title>Lab Search</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
             <a class="navbar-brand mr-auto" href="#"><img src="/images/nav-bar-logo.png" alt="VMedico           " height="30" width="40"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a class="nav-link" href="./index.html">           <span
+                    <li class="nav-item active"><a class="nav-link" href="./index.html"><span
                                 class="fa fa-home fa-lg"></span>Home</a> </li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"> <span
                                 class="fa fa-info fa-lg"></span> About</a> </li>
@@ -36,6 +36,10 @@
                                 class="fa fa-address-card    fa-lg"></span> Contact</a> </li>
 
                 </ul>
+                <span class="navbar-text">
+                    <a href="/logout" id="loginButton">
+                        <span class="fa fa-sign-in"></span> Logout</a>
+                </span>
             </div>
 
         </div>
@@ -49,17 +53,16 @@
 
 
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="row">
+<header class="jumbotron jumbotron-fluid">
+        <div class="container">
             <div class="row row-header">
-                <div class="col-md-4 col-sm-4">
-                	<br><br><br>
-                    <h1>VMedico</h1>
-                    <h2>Welcome Assistant</h2>
+                <div class="col-md-5 col-sm-4">
+                	<br><br><br><br>
+                	<h1>VMedico</h1>
+                    <h3>Flawless medical assistance at the comfort of your couch!</h3>
                 </div>
                 <div class="col"></div>
-                <div class="col-md-4 col-sm align-self-center">
-                <br>
+                <div class="col-md-4 col-sm align-self-center"><br><br>
                     <img src="/images/Jumbo-tron-logo.png" alt="logo" class="img-fluid">
                 </div>
 
@@ -67,31 +70,76 @@
             </div>
         </div>
     </header>
-
+        
+<br><br><br><br><br>
     <div class="container">
-        
-<br><br><br>
+		<div class="row row-content">
+           <div class="col-12">
+              <h3>Choose as per your preference</h3>
 
-		
-		
-<div class="row">
-<div class="col-md-6">
-      <form class="form-signin" method="post" action="/laboratoryLoginController">
-      	<h2 class="form-signin-heading">Lab Login</h2>
-        <h4 class="form-signin-heading">Enter Credentials</h4>
-        <p>
-          <label for="username" class="sr-only">Email</label>
-          <input type="email" id="email" name="emailLogin" class="form-control" placeholder="Email" required autofocus>
-        </p>
-        <p>
-          <label for="password" class="sr-only">Password</label>
-          <input type="password" id="password" name="passwordLogin" class="form-control" placeholder="Password" required>
-        </p>
-		
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      </form></div>
-</div>
-		
+           </div>
+            <div class="col-12 col-md-9">
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Lab Name</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Lab Name">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Lab Email</label>
+                        <div class="col-md-5">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter Lab Email">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Lab ID</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="lid" name="lid" placeholder="Enter Lab ID">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+                
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">Lab Contact</label>
+                        <div class="col-md-5">
+                            <input type="text" class="form-control" id="phoneNum" name="phoneNum" placeholder="Enter Lab Contact No.">
+                        </div>
+
+                   		<div class="col-md-5">
+                        	<div class="offset-md-2 col-md-10">
+                            	<button type="submit" class="btn btn-dark">Search</button>
+                        	</div>
+                    	</div>
+                    </div>
+                </form>
+            </div>
+       </div>
 
 
 
@@ -100,15 +148,44 @@
 
 
 
-</div>
-        
-    <br>
-    <br>
 
-    
 
-    <br>
-    <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div></div>
+        </div>
 
 
 
@@ -133,7 +210,7 @@
                         HONG KONG<br>
                         <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
                         <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
-                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@vmedico.com">help@vmedico.com</a>
+                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
@@ -159,7 +236,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
-
 
 
 </body>

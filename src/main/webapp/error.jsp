@@ -1,140 +1,263 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Main Page</title>
 
-<style type="text/css">
-   .jumbotron {
-    background-color: darkblue;
-    color: #fff;
-    padding: 60px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: darkblue;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-.row{
-  padding-left: 25%;
-  padding-right: 25%;
-  padding-top: 4%;
-}
-  .panel {
-    
-    border: 1px solid darkblue; 
-    border-radius:0 !important;
-    transition: box-shadow 1s;
-    width: 100%;
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  }
-  .panel:hover {
-    box-shadow: 6px 0px 40px rgba(0,0,0, .6);
-  }
-  
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/bootstrap-social.css">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/styles.css">
+    <title>Error 404!</title>
+</head>
 
-</style>
-    <!-- Bootstrap -->
-    
-    <link rel="stylesheet" href="css/custom1.css">
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="#"><img src="/images/nav-bar-logo.png" alt="VMedico           " height="30" width="40"></a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"><span
+                                class="fa fa-home fa-lg"></span>Home</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> <span
+                                class="fa fa-info fa-lg"></span> About</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg">
+                    </span> Contact</a> </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="homePage.jsp" id="loginButton">
+                        <span class="fa fa-sign-in"></span> Login</a>
+                </span>
+            </div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">SBoA</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="homePage.html">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">JOBS</a></li>
-        <li><a href="#">COVID-19</a></li>
-        <li><a href="#">BLOGS</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">CONTACT US</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+        </div>
+    </nav>
 
 
-    <div class="jumbotron text-center ">
-  		<h1>ErrorPage</h1> 
- 		<p>Waiting for your token number is bygone now!</p> 
-	</div>
+   
 
 
 
 
 
-  <div class="row slideanim">
-    <div class="col-sm-3 col-xs-8">
-      <a href="patientLogin.jsp"><button class="btn btn-primary btn-lg" type="button" > Patient </button></a>    
-    </div>
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-md-4 col-sm-4">
+                	<br><br><br>
+                    <h1>404! Page Not Found</h1>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-4 col-sm align-self-center"><br><br>
+                    <img src="/images/Jumbo-tron-logo.png" alt="logo" class="img-fluid">
+                </div>
 
 
-      <div class="col-sm-3 col-xs-8">
-        <a href="doctorLogin.jsp"><button class="btn btn-primary btn-lg" type="button">  Doctor  </button></a>
-            
-      </div>
+            </div>
+        </div>
+    </header>
 
-      <div class="col-sm-3 col-xs-8">
-        <a href="laboratoryLogin.jsp"><button class="btn btn-primary btn-lg" type="button">Laboratory</button></a>
-      </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
 
-      <div class="col-sm-3 col-xs-8">
-        <a href="adminLogin.jsp"><button class="btn btn-primary btn-lg" type="button">   Admin   </button></a>
-      </div>
-
-  </div>
-
-  <div class="navbar navbar-inverse navbar-fixed-bottom">
-    <div class="navbar-text pull-left">
-      <div class="container">
-        <p>© State Bank of Ajman</p>
-      </div>
-    </div>
-  </div>
+                        <div class="carousel-item active">
+                            <!-- <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza"> -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>Monitor</h1>
+                                <p>Come and experience the state of the art health monitoring system at VMedico.</p>
+                            </div>
+                        </div>
 
 
-  </body>
+                        <div class="carousel-item">
+                            <!-- <img class="d-block img-fluid" src="img/buffet.png" alt="Buffet"> -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 class="mt-0">Analyze</h1>
+                                <p>Leave it to the professionals when it comes to medical care.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="carousel-item">
+                            <!-- <img class="d-block img-fluid" src="img/alberto.png" alt="Alberto"> -->
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1 class="mt-0">Treat</h1>
+                                  <p>Medical saviors at your doorstep on demand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                    </ol>
+                    <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>We Think</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img src="img/alberto.png" alt="Alberto" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Who we are?</h2>
+                        <p>iCliniq is a Medical Second Opinion platform where users can get medical advice from doctors.
+                         Our virtual online medical help service provides the ultimate convenience and premier health
+                          care. we are proud to be in the Telemedicine industry. Our doctor panel consists of medical
+                           practitioners, physicians and therapists from US, UK, UAE, India, Singapore, Germany and counting... </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>We Plan</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img src="img/buffet.png" alt="Buffet"
+                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">What we do?</h2>
+                        <p>We provide various channels to contact our doctors such as posting as a health query or
+                         booking a slot for real time face-to-face consultation over HD video and phone (it will be
+                          a private/secure call back). One can use our service to consult with highly qualified physicians
+                           at the comfort of your home. </p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+
+
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 order-sm-last col-md-3">
+                <h3>We Implement</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Our Mission</h2>
+                        <p>VMedico's mission is to create a platform that is easily accessible and trustworthy
+                         for both Doctors and Patients. We believing in constantly evolving and creating different
+                          services that will be a right fit for any user based on his requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h3>We Imporvise</h3>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="media">
+                    <img src="img/buffet.png" alt="Buffet"
+                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
+                    <div class="media-body">
+                        <h2 class="mt-0">Our Vision</h2>
+                        <p>VMedico's vision is to gain recognition from its users as the world's largest medical
+                         second opinion platform and to keep working tirelessly to stay there. We want to ensure
+                          that all its users are rightly informed about their potential health issues and that the
+                           Doctor team at VMedico helps the users with prevention.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, Clear Water Bay Road<br>
+                        Clear Water Bay, Kowloon<br>
+                        HONG KONG<br>
+                        <i class="fa fa-phone fa-lg"></i>: +852 1234 5678<br>
+                        <i class="fa fa-fax fa-lg"></i> +852 8765 4321<br>
+                        <i class="fa fa-envelope fa-lg"></i> <a href="mailto:help@vmedico.com">help@vmedico.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2020 VMedico</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
+
 </html>

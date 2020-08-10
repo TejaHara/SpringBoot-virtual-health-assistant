@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example.demo.Models.Laboratory;
-import com.example.demo.Models.Patient;
 import com.example.demo.service.loginService;
 
 @Controller

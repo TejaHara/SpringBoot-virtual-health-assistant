@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/css/bootstrap-social.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/styles.css">
-    <title>Lab Login</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
@@ -36,6 +36,7 @@
                                 class="fa fa-address-card    fa-lg"></span> Contact</a> </li>
 
                 </ul>
+                
             </div>
 
         </div>
@@ -55,7 +56,7 @@
                 <div class="col-md-4 col-sm-4">
                 	<br><br><br>
                     <h1>VMedico</h1>
-                    <h2>Welcome Assistant</h2>
+                    <h2>Flawless medical assistance at the comfort of your couch!</h2>
                 </div>
                 <div class="col"></div>
                 <div class="col-md-4 col-sm align-self-center">
@@ -67,39 +68,109 @@
             </div>
         </div>
     </header>
-
     <div class="container">
-        
-<br><br><br>
 
-		
-		
-<div class="row">
-<div class="col-md-6">
-      <form class="form-signin" method="post" action="/laboratoryLoginController">
-      	<h2 class="form-signin-heading">Lab Login</h2>
-        <h4 class="form-signin-heading">Enter Credentials</h4>
-        <p>
-          <label for="username" class="sr-only">Email</label>
-          <input type="email" id="email" name="emailLogin" class="form-control" placeholder="Email" required autofocus>
-        </p>
-        <p>
-          <label for="password" class="sr-only">Password</label>
-          <input type="password" id="password" name="passwordLogin" class="form-control" placeholder="Password" required>
-        </p>
-		
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-      </form></div>
-</div>
-		
+<div class="row row-content">
+           <div class="col-12">
+              <h3>Location Information</h3>
+           </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                   <h5>Our Address</h5>
+                    <address style="font-size: 100%">
+		              121, Clear Water Bay Road<br>
+		              Clear Water Bay, Kowloon<br>
+		              HONG KONG<br>
+		              <i class="fa fa-phone"></i>: +852 1234 5678<br>
+		              <i class="fa fa-fax"></i>: +852 8765 4321<br>
+		              <i class="fa fa-envelope"></i>:
+                        <a href="mailto:confusion@food.net">v</a>
+		           </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Map of our Location</h5>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" href="tel:+85212345678"><i class="fa fa-phone"></i> Call</a>
+                    <a role="button" class="btn btn-info"><i class="fa fa-skype"></i> Skype</a>
+                    <a role="button" class="btn btn-success" href="mailto:confusion@food.net"><i class="fa fa-envelope-o"></i> Email</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Send us your Feedback</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <form action="">
+                    <div class="form-group row">
+                        <label for="firstname" class=" col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="firstname" name="firstName" placeholder="firstName Holder">
+                        </div>
+                    </div>
 
+                    <div class="form-group row">
+                        
+                        <label for="lastname" class=" col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="lastname" name="lastName" placeholder="lastName Holder">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Telnum</label>
+                        <div class="col-5 col-md-3">
+                            <input type="text" class="form-control" id="areacode" name="areaCode" placeholder="areaCode Holder">
+                        </div>
 
+                        <div class="col-7 col-md-7">
+                            <input type="text" class="form-control" id="telnum" name="telNum" placeholder="telNum Holder">
+                        </div>
+                    </div>
+                        
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-10">
+                            <input type="email" class="form-control" id="email" name="eMail" placeholder="eMail Holder">
+                        </div>
+                    </div>
+                        
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-2">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="approve" id="approve">
+                                    <label class="form-check-label" for="approve">
+                                        <strong>May we contact you?</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 offset-md-1">
+                                <select class="form-control" name="" id="">
+                                    <option value="">Tel</option>
+                                    <option value="">Email</option>
+                                </select>
+                            </div>
+                        </div>
+                    
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your feedback</label>
+                        <div class="col-md-10">
+                            <textarea  class="form-control" id="feedback" name="feedBack" placeholder="feedBack Holder" rows="6"></textarea>
+                        </div>
+                    </div>
 
-
-
-
-
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+             <div class="col-12 col-md">
+            </div>
+       </div>
 </div>
         
     <br>

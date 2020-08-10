@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 
-@WebFilter(urlPatterns = {"/admin.jsp"})
+@WebFilter(urlPatterns = {"/admin*"})
 public class AdminFilter implements Filter{
 
 	@Override
@@ -23,11 +23,17 @@ public class AdminFilter implements Filter{
 		HttpServletRequest request = (HttpServletRequest)req;
 		HttpServletResponse response = (HttpServletResponse)res;
 		HttpSession session = request.getSession(false);
-		if(session.getAttribute("patient")== null && session.getAttribute("admin") == null){
+		if(session.getAttribute("Patient")== null && session.getAttribute("Doctor")== null &&session.getAttribute("Laboratory")== null && session.getAttribute("Admin") == null){
 			response.sendRedirect("/homePage.jsp");
 		}
-		if(session.getAttribute("patient") != null) {
+		if(session.getAttribute("Patient") != null) {
 			response.sendRedirect("/patient.jsp");
+		}
+		if(session.getAttribute("Doctor") != null) {
+			response.sendRedirect("/doctor.jsp");
+		}
+		if(session.getAttribute("Laboratory") != null) {
+			response.sendRedirect("/laboratory.jsp");
 		}
 		chain.doFilter(req, res);
 	}

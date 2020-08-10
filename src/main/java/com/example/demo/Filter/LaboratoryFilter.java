@@ -1,5 +1,6 @@
 package com.example.demo.Filter;
 
+
 import java.io.IOException;
 
 import javax.servlet.Filter;
@@ -12,29 +13,29 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebFilter(urlPatterns = {"homePage.jsp", "index.jsp"})
-public class LoginFilter implements Filter{
+
+@WebFilter(urlPatterns = {"/laboratory.jsp"})
+public class LaboratoryFilter implements Filter{
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("In loginFilter");
+		System.out.println("in laboratoryFilter");
 		HttpServletRequest request = (HttpServletRequest)req;
 		HttpServletResponse response = (HttpServletResponse)res;
 		HttpSession session = request.getSession(false);
-		
-		if(session != null && session.getAttribute("Patient") != null) {
-			response.sendRedirect("/patient.jsp");
+		if(session.getAttribute("Patient")== null && session.getAttribute("Doctor")== null &&session.getAttribute("Laboratory")== null && session.getAttribute("Admin") == null){
+			response.sendRedirect("/homePage.jsp");
 		}
-		else if(session != null && session.getAttribute("Doctor") != null) {
-			response.sendRedirect("/doctor.jsp");
-		}
-		else if(session != null && session.getAttribute("Laboratory") != null) {
-			response.sendRedirect("/laboratory.jsp");
-		}
-		else if(session != null && session.getAttribute("Admin") != null) {
+		if(session.getAttribute("Admin") != null) {
 			response.sendRedirect("/admin.jsp");
 		}
-		chain.doFilter(request, response);
+		if(session.getAttribute("Patient") != null) {
+			response.sendRedirect("/patient.jsp");
+		}
+		if(session.getAttribute("Doctor") != null) {
+			response.sendRedirect("/doctor.jsp");
+		}
+		chain.doFilter(req, res);
 	}
 }

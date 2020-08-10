@@ -3,7 +3,17 @@
 
 
 
+ .first{
+  border-left: 5px solid darkblue;
+  background-color: #baa3e7;
+  padding:1%;
+ }
 
+ .second{
+  border-left: 5px solid rgb(248, 11, 11);
+  background-color: #9575CD;
+            padding: 1%;
+ }
 
 
 
@@ -13,7 +23,7 @@
 
 .row-content {
   margin: 0px auto;
-  padding: 50px 0px;
+  padding: 5px 0px;
   border-bottom: 1px ridge;
   min-height: 400px; }
 
@@ -34,7 +44,7 @@ address {
   color: #0f0f0f; }
 
 body {
-  padding: 50px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   z-index: 0; }
 
 .navbar-dark {
@@ -47,7 +57,7 @@ body {
   padding: 10px; }
 
 .carousel {
-  background: #512DA8; }
+  background: #6b72ed; }
   .carousel .carousel-item {
     height: 300px; }
     .carousel .carousel-item img {
@@ -75,7 +85,19 @@ body {
   
   .modal .modal-footer {
     background: #9575CD; }
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
 /* 
   .navbar {
     margin-bottom: 0;

@@ -23,7 +23,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="VMedico           " height="30" width="40"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="/images/nav-bar-logo.png" alt="VMedico           " height="30" width="40"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="index.html"><span
@@ -32,7 +32,7 @@
                                 class="fa fa-info fa-lg"></span> About</a> </li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg">
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-phone fa-lg">
                     </span> Contact</a> </li>
                 </ul>
                 <span class="navbar-text">
@@ -54,13 +54,17 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>VMedico</h1>
-                    <p>Waiting for your token number is bygone now!</p>
+                <div class="col-md-6 col-sm-4">
+                	<br><br><br><br>
+                	<h1>VMedico</h1>
+                    <h3>Flawless medical assistance at the comfort of your couch!</h3>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                <div class="col"></div>
+                <div class="col-md-4 col-sm align-self-center"><br><br>
+                    <img src="/images/Jumbo-tron-logo.png" alt="logo" class="img-fluid">
                 </div>
+
+
             </div>
         </div>
     </header>
@@ -72,38 +76,29 @@
                     <div class="carousel-inner" role="listbox">
 
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza">
+                            <!-- <img class="d-block img-fluid" src="img/uthappizza.png" alt="Uthappizza"> -->
                             <div class="carousel-caption d-none d-md-block">
-                                <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span
-                                        class="badge badge-pill badge-default">$4.99</span></h2>
-                                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with
-                                    Cerignola
-                                    olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo
-                                    Paneer.</p>
+                                <h1>Monitor</h1>
+                                <p>Come and experience the state of the art health monitoring system at VMedico.</p>
                             </div>
                         </div>
 
 
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/buffet.png" alt="Buffet">
+                            <!-- <img class="d-block img-fluid" src="img/buffet.png" alt="Buffet"> -->
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
-                                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
-                                    appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft
-                                    drinks. All for just $19.99 per person </p>
+                                <h1 class="mt-0">Analyze</h1>
+                                <p>Leave it to the professionals when it comes to medical care.</p>
                             </div>
                         </div>
 
 
 
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="img/alberto.png" alt="Alberto">
+                            <!-- <img class="d-block img-fluid" src="img/alberto.png" alt="Alberto"> -->
                             <div class="carousel-caption d-none d-md-block">
-                                <h2 class="mt-0">Alberto Somayya</h2>
-                                <h4>Executive Chef</h4>
-                                <p>Award winning three-star Michelin chef with wide International experience having worked
-                                    closely with whos-who in the culinary world, he specializes in creating mouthwatering
-                                    Indo-Italian fusion experiences. </p>
+                                <h1 class="mt-0">Treat</h1>
+                                  <p>Medical saviors at your doorstep on demand.</p>
                             </div>
                         </div>
                     </div>
@@ -136,14 +131,13 @@
 
 		<div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>We Think</h3>
+                <h2>We Think</h2>
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/alberto.png" alt="Alberto" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Who we are?</h2>
-                        <p>iCliniq is a Medical Second Opinion platform where users can get medical advice from doctors.
+                        <h1 class="mt-0">Who we are?</h1>
+                        <p>VMedico is a Medical Second Opinion platform where users can get medical advice from doctors.
                          Our virtual online medical help service provides the ultimate convenience and premier health
                           care. we are proud to be in the Telemedicine industry. Our doctor panel consists of medical
                            practitioners, physicians and therapists from US, UK, UAE, India, Singapore, Germany and counting... </p>
@@ -153,14 +147,12 @@
         </div>
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
-                <h3>We Plan</h3>
+                <h2>We Plan</h2>
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/buffet.png" alt="Buffet"
-                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">What we do?</h2>
+                        <h1 class="mt-0">What we do?</h1>
                         <p>We provide various channels to contact our doctors such as posting as a health query or
                          booking a slot for real time face-to-face consultation over HD video and phone (it will be
                           a private/secure call back). One can use our service to consult with highly qualified physicians
@@ -178,13 +170,12 @@
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>We Implement</h3>
+                <h2>We Implement</h2>
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Our Mission</h2>
+                        <h1 class="mt-0">Our Mission</h1>
                         <p>VMedico's mission is to create a platform that is easily accessible and trustworthy
                          for both Doctors and Patients. We believing in constantly evolving and creating different
                           services that will be a right fit for any user based on his requirements.</p>
@@ -196,14 +187,12 @@
 
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
-                <h3>We Imporvise</h3>
+                <h2>We Imporvise</h2>
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/buffet.png" alt="Buffet"
-                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2 class="mt-0">Our Vision</h2>
+                        <h1 class="mt-0">Our Vision</h1>
                         <p>VMedico's vision is to gain recognition from its users as the world's largest medical
                          second opinion platform and to keep working tirelessly to stay there. We want to ensure
                           that all its users are rightly informed about their potential health issues and that the
@@ -261,37 +250,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<!-- <script src="js/scripts.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carouselButton").click(function(){
-            if($('#carouselButton').children('span').hasClass('fa-pause')){
-                $("#mycarousel").carousel('pause');
-                $('#carouselButton').children('span').removeClass('fa-pause');
-                $('#carouselButton').children('span').addClass('fa-play')
+<script src="js/scripts.js"></script>
 
-            }
-            else if($('#carouselButton').children('span').hasClass('fa-play')){
-                $("#mycarousel").carousel('cycle');
-                $('#carouselButton').children('span').removeClass('fa-play');
-                $('#carouselButton').children('span').addClass('fa-pause')
-
-            }
-        });
-        
-    
-
-    
-        $("#loginButton").click(function(){
-            $("#loginModal").modal('show');
-        });
-    
-        $("#reserveButton").click(function(){
-            $("#reserveModal").modal('show');
-        });
-    });
-</script> -->
 
 
 

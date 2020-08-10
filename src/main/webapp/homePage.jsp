@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/css/bootstrap-social.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/styles.css">
-    <title>Welcome to VMedioc</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="VMedico           " height="30" width="40"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="/images/nav-bar-logo.png" alt="VMedico           " height="30" width="40"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span
@@ -36,19 +36,14 @@
                                 class="fa fa-address-card    fa-lg"></span> Contact</a> </li>
 
                 </ul>
-                <span class="navbar-text">
+               <!--  <span class="navbar-text">
                     <a data-toggle="modal" id="loginButton">
                         <span class="fa fa-sign-in"></span> Login</a>
-                </span>
+                </span> -->
             </div>
 
         </div>
     </nav>
-
-
-    
-
-
 
 
 
@@ -56,13 +51,17 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>VMedico</h1>
-                    <p>Waiting for your token number is bygone now!</p>
+                <div class="col-md-6 col-sm-4">
+                	<br><br><br><br>
+                	<h1>VMedico</h1>
+                    <h3>Flawless medical assistance at the comfort of your couch!</h3>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                <div class="col"></div>
+                <div class="col-md-4 col-sm align-self-center"><br><br>
+                    <img src="/images/Jumbo-tron-logo.png" alt="logo" class="img-fluid">
                 </div>
+
+
             </div>
         </div>
     </header>
@@ -99,84 +98,7 @@
 		
 
 
-		<div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>We Think</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/alberto.png" alt="Alberto" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Who we are?</h2>
-                        <p>iCliniq is a Medical Second Opinion platform where users can get medical advice from doctors.
-                         Our virtual online medical help service provides the ultimate convenience and premier health
-                          care. we are proud to be in the Telemedicine industry. Our doctor panel consists of medical
-                           practitioners, physicians and therapists from US, UK, UAE, India, Singapore, Germany and counting... </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>We Plan</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/buffet.png" alt="Buffet"
-                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">What we do?</h2>
-                        <p>We provide various channels to contact our doctors such as posting as a health query or
-                         booking a slot for real time face-to-face consultation over HD video and phone (it will be
-                          a private/secure call back). One can use our service to consult with highly qualified physicians
-                           at the comfort of your home. </p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-
-
-
-
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>We Implement</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Our Mission</h2>
-                        <p>VMedico's mission is to create a platform that is easily accessible and trustworthy
-                         for both Doctors and Patients. We believing in constantly evolving and creating different
-                          services that will be a right fit for any user based on his requirements.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>We Imporvise</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/buffet.png" alt="Buffet"
-                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Our Vision</h2>
-                        <p>VMedico's vision is to gain recognition from its users as the world's largest medical
-                         second opinion platform and to keep working tirelessly to stay there. We want to ensure
-                          that all its users are rightly informed about their potential health issues and that the
-                           Doctor team at iCliniq helps the users with prevention.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+		
 
         
         
@@ -185,12 +107,22 @@
         
         
     </div>
-<!--     <br>
+  <br>
     <br>
 
     
     <br>
-    <br> -->
+    <br>   <br>
+    <br>
+
+    
+    <br>
+    <br>   <br>
+    <br>
+
+    
+    <br>
+    <br> 
 
 
 
@@ -240,39 +172,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<!-- <script src="js/scripts.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carouselButton").click(function(){
-            if($('#carouselButton').children('span').hasClass('fa-pause')){
-                $("#mycarousel").carousel('pause');
-                $('#carouselButton').children('span').removeClass('fa-pause');
-                $('#carouselButton').children('span').addClass('fa-play')
-
-            }
-            else if($('#carouselButton').children('span').hasClass('fa-play')){
-                $("#mycarousel").carousel('cycle');
-                $('#carouselButton').children('span').removeClass('fa-play');
-                $('#carouselButton').children('span').addClass('fa-pause')
-
-            }
-        });
-        
-    
-
-    
-        $("#loginButton").click(function(){
-            $("#loginModal").modal('show');
-        });
-    
-        $("#reserveButton").click(function(){
-            $("#reserveModal").modal('show');
-        });
-    });
-</script> -->
-
-
+<script src="js/scripts.js"></script>
 
 </body>
 

@@ -1,13 +1,9 @@
 package com.example.demo.Models;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-import org.springframework.beans.factory.annotation.Autowired;
 
 @Entity
 @Table(name = "patientInfo")
@@ -27,11 +23,15 @@ public class Patient {
 	private String docID;
 	private String hospitalID;
 	private String reportsID;
+	private String prescriptionList;
+	private String prescribedDate;
 	private String status="BeingTreated";
+	private String reportsLink;
 	
 
 
-	
+
+
 	public String getCaseDescription(){
 		String caseDesc="    Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
 				+ " sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
@@ -120,5 +120,38 @@ public class Patient {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+	public String getPrescriptionList() {
+		return prescriptionList;
+	}
+
+	public void setPrescriptionList(String prescriptionList) {
+		this.prescriptionList = prescriptionList;
+	}
+
+	public String getPrescribedDate() {
+		return prescribedDate;
+	}
+
+	public void setPrescribedDate(String prescribedDate) {
+		this.prescribedDate = prescribedDate;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	public String getReportsLink() {
+		return reportsLink;
+	}
+
+	public void setReportsLink(String reportsLink) {
+		this.reportsLink = reportsLink;
+	}
+	
 
 }

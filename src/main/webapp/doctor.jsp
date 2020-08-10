@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/css/bootstrap-social.css">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/styles.css">
-    <title>Welcome to VMedioc</title>
+    <title>Welcome Doc!</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" alt="VMedico           " height="30" width="40"></a>
+            <a class="navbar-brand mr-auto" href="#"><img src="/images/nav-bar-logo.png" alt="VMedico           " height="30" width="40"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active"><a class="nav-link" href="./index.html"><span
@@ -54,15 +54,16 @@
 
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="row">
             <div class="row row-header">
-                <div class="col-12 col-sm-6">
-                    <h1>Ristorante con Fusion</h1>
-                    <h3>Welcome Doctor</h3>
+                <div class="col-md-4 col-sm-4">
+                	<br><br><br><br>
+                    <h1>VMedico</h1>
+                    <h3>Welcome Doc!</h3>
                 </div>
                 <div class="col"></div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                <div class="col-md-4 col-sm align-self-center">
+                    <img src="/images/Jumbo-tron-logo.png" alt="logo" class="img-fluid">
                 </div>
 
 
@@ -71,6 +72,96 @@
     </header>
 
     <div class="container">
+    
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>PID</th>                
+                <th>Name</th>
+                <th>Age</th>
+                <th>Case</th>
+                <th>Severity</th>
+                <th>Contact</th>
+                <th>More</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>p1</td>
+                <td>p1_name</td>
+                <td>p1_age</td>
+                <td>p1_case</td>
+                <td>p1_severity</td>
+                <td>p1_contact</td>
+             	<td><a href"#">diagnose</a><td>
+              </tr>
+              <tr>
+                <td>p2</td>
+                <td>p2_name</td>
+                <td>p2_age</td>
+                <td>p2_case</td>
+                <td>p2_severity</td>
+                <td>p2_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p2</td>
+                <td>p2_name</td>
+                <td>p2_age</td>
+                <td>p2_case</td>
+                <td>p2_severity</td>
+                <td>p2_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p3</td>
+                <td>p3_name</td>
+                <td>p3_age</td>
+                <td>p3_case</td>
+                <td>p3_severity</td>
+                <td>p3_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p4</td>
+                <td>p4_name</td>
+                <td>p4_age</td>
+                <td>p4_case</td>
+                <td>p4_severity</td>
+                <td>p4_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p5</td>
+                <td>p5_name</td>
+                <td>p5_age</td>
+                <td>p5_case</td>
+                <td>p5_severity</td>
+                <td>p5_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p6</td>
+                <td>p6_name</td>
+                <td>p6_age</td>
+                <td>p6_case</td>
+                <td>p6_severity</td>
+                <td>p6_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              <tr>
+                <td>p7</td>
+                <td>p7_name</td>
+                <td>p7_age</td>
+                <td>p7_case</td>
+                <td>p7_severity</td>
+                <td>p7_contact</td>
+             	<td><a href"">diagnose</a></td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
         
 <br><br><br>
 
@@ -87,131 +178,7 @@
 
 
 
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/uthappizza.png" alt="Uthappizza" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT </span> <span
-                                class="badge badge-pill badge-secondary"> $4.99 </span></h2>
-                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
-                            olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/buffet.png" alt="Buffet"
-                        class="d-flex mr-3 order-sm-last img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger"> NEW </span></h2>
-                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
-                            appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft
-                            drinks. All for just $19.99 per person </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 order-sm-last col-md-3">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <img src="img/alberto.png" alt="Alberto" class="d-flex mr-3 img-thumbnail align-self-center">
-                    <div class="media-body">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p>Award winning three-star Michelin chef with wide International experience having worked
-                            closely with whos-who in the culinary world, he specializes in creating mouthwatering
-                            Indo-Italian fusion experiences. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="row align-self-center  col-12 col-sm-6">
-                <div class="card" id="reserve_card">
-
-                    <h3 class="card-header bg-warning text-white">Reserve Table</h3>
-                    <div class="card-body">
-                        <dl class="row">
-                            <dt class="col-3">Number of Guests</dt>
-                            <dd class="col-9">
-                                <div class="form-horizontal" role="form">
-                                    <div class="form-group row">
-                                        <div class="col-sm-10">
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                                    value="option1"> 1 
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                                    value="option2"> 2 
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                                    value="option3"> 3 
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                                    value="option1"> 4 
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                                    value="option2"> 5 
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="inlineRadioOptions" id="inlineRadio3"
-                                                    value="option3"> 6 
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </dd>
-                            <dt class="col-3">Date &amp; Time</dt>
-                            <dd class="col-9">
-                                <div class="form-group row">
-                                    <div class="col-5 col-md-5">
-                                        <input type="text" class="form-control" id="areacode" name="areaCode"
-                                            placeholder="Date">
-                                    </div>
-
-                                    <div class="col-5 col-md-5">
-                                        <input type="text" class="form-control" id="telnum" name="telNum"
-                                            placeholder="Time">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12 col-sm align-self-center">
-                                        <button class="btn block-button bg-primary text-white">  Reserve  </button>
-                                    </div>
-                                </div>
-
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+        
     <br>
     <br>
 
@@ -263,38 +230,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<!-- <script src="js/scripts.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#mycarousel").carousel( { interval: 2000 } );
-        $("#carouselButton").click(function(){
-            if($('#carouselButton').children('span').hasClass('fa-pause')){
-                $("#mycarousel").carousel('pause');
-                $('#carouselButton').children('span').removeClass('fa-pause');
-                $('#carouselButton').children('span').addClass('fa-play')
-
-            }
-            else if($('#carouselButton').children('span').hasClass('fa-play')){
-                $("#mycarousel").carousel('cycle');
-                $('#carouselButton').children('span').removeClass('fa-play');
-                $('#carouselButton').children('span').addClass('fa-pause')
-
-            }
-        });
-        
-    
-
-    
-        $("#loginButton").click(function(){
-            $("#loginModal").modal('show');
-        });
-    
-        $("#reserveButton").click(function(){
-            $("#reserveModal").modal('show');
-        });
-    });
-</script> -->
-
+<script src="js/scripts.js"></script>
 
 
 </body>
